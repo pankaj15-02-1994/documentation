@@ -1,0 +1,51 @@
+counter-timer from 0 to value:-)
+
+<html>
+<div id="talkbubble"><span class="count">100</span></div>
+<div id="talkbubble"><span class="count">200</span></div>
+<div id="talkbubble"><span class="count">300</span></div>
+
+
+</html>
+
+<style>
+.count
+{
+  line-height: 100px;
+  color:white;
+  margin-left:30px;
+  font-size:25px;
+}
+#talkbubble {
+   width: 120px;
+   height: 80px;
+   background: red;
+   position: relative;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+  float:left;
+  margin:20px;
+  border-radius:50px;
+}
+
+
+
+
+</style>
+
+<script>
+$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 3000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+
+
+</script>

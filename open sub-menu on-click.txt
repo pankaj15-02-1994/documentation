@@ -1,0 +1,9 @@
+<script>
+	 $(function(){
+$('.ul').find('> li').click(function(){
+    $(this).find('ul')
+    .stop(true, true).slideToggle(300); 
+    return false;       
+});    
+});
+	</script>

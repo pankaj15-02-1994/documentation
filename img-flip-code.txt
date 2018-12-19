@@ -1,0 +1,22 @@
+img flip arround x-axis , 
+
+img:hover {
+transform:rotatex(180deg);
+transition:0.8s;
+}
+
+img:{
+transition:0.8s;
+}
+
+
+img flip arround y-axis , 
+
+img:hover {
+transform:rotatey(180deg);
+transition:0.8s;
+}
+
+img:{
+transition:0.8s;
+}

@@ -1,0 +1,14 @@
+
+
+
+.delivery-mode input[type="radio"]:checked,
+.delivery-mode input[type="radio"]:not(:checked) { position: absolute; left: -9999px;}
+.delivery-mode input[type="radio"]:checked + label,
+.delivery-mode input[type="radio"]:not(:checked) + label{ position: relative; padding-left: 28px; cursor: pointer;    line-height: 20px;    display: inline-block;    color: #666;}
+.delivery-mode input[type="radio"]:checked + label:before,
+.delivery-mode input[type="radio"]:not(:checked) + label:before { content: ''; position: absolute; left: 0; top: 0; width: 24px; height: 24px; border: 1px solid #d70f64; border-radius: 100%; background: #fff;}
+.delivery-mode input[type="radio"]:checked + label:after,
+.delivery-mode input[type="radio"]:not(:checked) + label:after { content: ''; width: 12px; height: 12px; background: #d70f64; position: absolute; top: 6px; left: 6px; border-radius: 100%; -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;}
+.delivery-mode input[type="radio"]:not(:checked) + label:after { opacity: 0; -webkit-transform: scale(0); transform: scale(0);}
+.delivery-mode input[type="radio"]:checked + label:after { opacity: 1; -webkit-transform: scale(1); transform: scale(1);}

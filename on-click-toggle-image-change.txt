@@ -1,0 +1,9 @@
+<script>
+$(document).ready(function(){
+
+$('.srch a').click(function(){
+
+$('.srch a').toggleClass('active');
+});
+});
+</script>

@@ -1,0 +1,42 @@
+<ul id="MainMenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li>
+              <a href="#">News</a>
+              <ul class="noJS">
+                <li><a href="#">sub menu 1</a></li>
+                <li><a href="#">sub menu 2</a></li>
+                <li><a href="#">sub menu 3</a></li>
+                <li><a href="#">sub menu 4</a></li>
+                <li><a href="#">sub menu 5</a></li>
+                <li><a href="#">sub menu 6</a></li>
+            </ul>                         
+        </li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Admin</a></li>
+        <li>
+            <a href="#">Resources</a>
+            <ul class="noJS">
+                <li><a href="#">sub menu 1</a></li>
+                <li><a href="#">sub menu 2</a></li>
+                <li><a href="#">sub menu 3</a></li>
+                <li><a href="#">sub menu 4</a></li>
+                <li><a href="#">sub menu 5</a></li>
+                <li><a href="#">sub menu 6</a></li>
+            </ul>
+        </li>
+        <li class="lastChild"><a href="#">New Button</a></li>
+	</ul>
+
+
+	<script>
+
+		$(function(){
+$('#MainMenu').find('> li').click(function(){
+    $(this).find('ul')
+    .stop(true, true).slideToggle(400); 
+    return false;       
+});    
+});
+	</script>

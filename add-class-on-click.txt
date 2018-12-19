@@ -1,0 +1,9 @@
+<script>
+	$(document).ready(function(){
+
+	$('.hang').click(function(){
+
+	$('.hang').toggleClass('active');
+	});
+	});
+	</script>

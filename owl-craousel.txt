@@ -1,0 +1,48 @@
+
+<head>
+<link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+            $(document).ready(function() {
+      $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay: true,
+    autoplayTimeout: 2500,
+    autoplayHoverPause: false,
+    slideTransition: 'linear',
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:8
+        }
+    }
+})
+            })
+          </script>
+		  
+		  
+		  
+		  <script type="text/javascript">
+          $(document).ready(function(){
+         
+          $('.owl-wrapper .owl-item').load(function(){
+ alert();
+         
+          });
+          });
+          </script>
+
+</head>
